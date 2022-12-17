@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .btn{
+        margin: 10px 50px;
+        padding: 10px 10px ;
+       border: 2px solid rgba(17, 34, 222, 0.5);
+       letter-spacing: 1px;
+       font-size: 50;
+       cursor: pointer;
+       color: white;
+       font-weight: bold;
+       border-radius: 10px;
+       text-align: center;
+       text-transform: uppercase;
+       background-color: rgba(17, 34, 222, 0.5);
+    }
+    .btn:hover{
+     transition: 0.5s ease;
+     background-color: blue;
+     
+    }
+    </style>
+</head>
+<body>
+   <button class="btn">Roll No 1: rahul Kumar</button>
+   <script>
+    let namastebtn = document.querySelector('button');
+    namastebtn.addEventListener('click', showMsg);
+
+    function showMsg(){
+       let name =  prompt('Enter Name Of Student');
+       namastebtn.textContent = 'Roll no 1'+ name;
+    }
+   </script>
+</body>
+</html>
